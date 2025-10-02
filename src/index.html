@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="flex gap-2 justify-center mt-6">
+            <img src="../img/Logo.svg" alt="" />
+            <ul class="flex gap-2 justify-center items-center">
+                <li>Продукти</li>
+                <li>Блог</li>
+                <li>Специален допир</li>
+                <li>Партньори</li>
+                <li>Корпоративни клиенти</li>
+                <li>Контакти</li>
+            </ul>
+            <input type="text" placeholder="Търси тук..." />
+            <!-- ikonki -->
+            <img src="../img/magnifying-glass-solid-full.svg" alt="" class="magnifying-icon">
+        </nav>
+    </header>
+
+    <main class="w-2/3 m-auto">
+        <section class="flex mt-20 gap-20">
+            <div class="w-2/5">
+                <img src="../img/product/product_big.png" alt="" >
+                <div class="flex gap-4.5 mt-6">
+                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small1.png" alt="">
+                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small2.png" alt="">
+                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small1.png" alt="">
+                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small3.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <h2>Обеци Гъбки</h2>
+                <p>Кат. номер: 8418</p>
+                <p>Производител: Epoque Candle</p>
+                <p>Висящи ефектни обеци гъбки, боядисани с черна матова боя,<br> закачени за кръгчета от моделин. Красив
+                    и артистичен акцент <br> във визията на дамите.</p>
+                <p><b>Материал:</b> месинг, матова черна боя, стоманени щифтове</p>
+                <p><b>Размер:</b> дължина - 7.5 см</p>
+
+                <hr class="h-0.5 bg-gray-400 border-0 mt-2 mb-3">
+
+                <h3 class="mb-2">Изберете цвят</h3>
+                <div class="flex gap-3">
+                    <label class="color-radio-button">
+                        <input type="radio" name="color" class="hidden peer">
+                        <span class="color-radio-button-span bg-orange-300"></span>
+                    </label>
+                    <label class="color-radio-button">
+                        <input type="radio" name="color" class="hidden peer">
+                        <span class="color-radio-button-span bg-green-300"></span>
+                    </label>
+                    <label class="color-radio-button">
+                        <input type="radio" name="color" class="hidden peer">
+                        <span class="color-radio-button-span bg-blue-300"></span>
+                    </label>
+                    <label class="color-radio-button">
+                        <input type="radio" name="color" class="hidden peer">
+                        <span class="color-radio-button-span bg-pink-300"></span>
+                    </label>
+                    <label class="color-radio-button">
+                        <input type="radio" name="color" class="hidden peer">
+                        <span class="color-radio-button-span bg-gradient-to-r  from-green-300 to-pink-300"></span>
+                    </label>
+                </div>
+
+                <hr class="h-0.5 bg-gray-400 border-0 mt-2 mb-3">
+
+                <h3 class="mb-2">Изберете размер</h3>
+                <div class="flex gap-3">
+                    <span class="size-radio-button">
+                        <input type="radio" name="size" value="S" class="peer" checked>
+                        S
+                    </span>
+                    <span class="size-radio-button">
+                        <input type="radio" name="size" value="M" class="peer" checked>
+                        M
+                    </span>
+                    <span class="size-radio-button">
+                        <input type="radio" name="size" value="L" class="peer" checked>
+                        L
+                    </span>
+                    <span class="size-radio-button">
+                        <input type="radio" name="size" value="XL" class="peer" checked>
+                        XL
+                    </span>
+                    <span class="size-radio-button">
+                        <input type="radio" name="size" value="XXL" class="peer" checked>
+                        XXL
+                    </span>
+                </div>
+
+                <div class="flex items-center gap-4 mt-8">
+                    <!-- Цена -->
+                    <div class="text-2xl font-extrabold">30.00лв</div>
+                    <div class="flex items-center gap-2 ml-3">
+                        <button id="minus" class="w-8 h-8 grid place-items-center rounded-md border border-purple-500 text-purple-600
+                                 hover:bg-purple-50 disabled:opacity-40 disabled:cursor-not-allowed"
+                            aria-label="Намали">
+                            –
+                        </button>
+
+                        <span id="qty" class="min-w-6 text-center">2</span>
+
+                        <button id="plus" class="w-8 h-8 grid place-items-center rounded-md border border-purple-500 text-purple-600
+                                 hover:bg-purple-50" aria-label="Увеличи">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <button class="bg-purple-700 hover:bg-purple-800 text-white font-medium py-2 px-2 rounded-md w-40 mt-3">
+                    Поръчай сега
+                </button>
+
+                <div class="max-w-md border rounded-lg divide-y">
+                    <div class="flex gap-3 p-4 items-start">
+                        <img src="../img/truck-icon.svg">
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Безплатна доставка над 50лв</h3>
+                            <a href="#" class="text-sm text-purple-600 hover:underline">Подробности за доставка</a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 p-4 items-start">
+                        <img src="../img/bag-icon.svg">
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Връщане на доставка</h3>
+                            <p class="text-sm text-gray-600">
+                                Безплатна 30-дневна доставка връщане.
+                                <a href="#" class="text-purple-600 hover:underline">Подробности</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

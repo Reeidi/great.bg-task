@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.magnifying-icon {
+    max-height: 20px;
+}
+
+.color-radio-button {
+    @apply w-8 h-8 rounded-full border-2 border-transparent cursor-pointer flex items-center justify-center;
+}
+
+.color-radio-button-span {
+    @apply w-6 h-6 rounded-full peer-checked:ring-2 peer-checked:ring-purple-500 peer-checked:ring-offset-2;
+}
+
+.size-radio-button {
+    @apply px-3 py-1 rounded-md border border-gray-300 bg-gray-100 text-sm font-medium
+    has-[input:checked]:bg-purple-100 has-[input:checked]:border-purple-500 has-[input:checked]:text-purple-700;
+}
