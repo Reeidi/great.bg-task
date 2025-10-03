@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
     <title>Document</title>
 </head>
 
@@ -22,15 +21,15 @@
                 <li>Контакти</li>
             </ul>
             <input type="text" placeholder="Търси тук..." />
-            <!-- ikonki -->
+            <!-- dobavi ikonki -->
             <img src="../img/magnifying-glass-solid-full.svg" alt="" class="magnifying-icon">
         </nav>
     </header>
 
     <main class="w-2/3 m-auto">
-        <section class="flex mt-20 gap-20">
+        <section id="product" class="flex mt-20 gap-20">
             <div class="w-2/5">
-                <img src="../img/product/product_big.png" alt="" >
+                <img src="../img/product/product_big.png" alt="">
                 <div class="flex gap-4.5 mt-6">
                     <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small1.png" alt="">
                     <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small2.png" alt="">
@@ -100,7 +99,6 @@
                 </div>
 
                 <div class="flex items-center gap-4 mt-8">
-                    <!-- Цена -->
                     <div class="text-2xl font-extrabold">30.00лв</div>
                     <div class="flex items-center gap-2 ml-3">
                         <button id="minus" class="w-8 h-8 grid place-items-center rounded-md border border-purple-500 text-purple-600
@@ -121,9 +119,9 @@
                     Поръчай сега
                 </button>
 
-                <div class="max-w-md border rounded-lg divide-y">
+                <div class="max-w-md border rounded-lg divide-y mt-15 mx-0 ml-0">
                     <div class="flex gap-3 p-4 items-start">
-                        <img src="../img/truck-icon.svg">
+                        <img src="../img/product/truck-icon.svg">
                         <div>
                             <h3 class="font-semibold text-gray-900">Безплатна доставка над 50лв</h3>
                             <a href="#" class="text-sm text-purple-600 hover:underline">Подробности за доставка</a>
@@ -131,7 +129,7 @@
                     </div>
 
                     <div class="flex gap-3 p-4 items-start">
-                        <img src="../img/bag-icon.svg">
+                        <img src="../img/product/bag-icon.svg">
                         <div>
                             <h3 class="font-semibold text-gray-900">Връщане на доставка</h3>
                             <p class="text-sm text-gray-600">
@@ -142,6 +140,109 @@
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <section id="similar_products">
+            <section class="bg-cream-50 py-10">
+                <div class="mx-auto max-w-6xl px-4">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h2 class="text-3xl font-bold">Подобни продукти</h2>
+
+                        <div class="flex items-center gap-3">
+                            <button
+                                class="group size-10 rounded-full bg-purple-100 hover:bg-purple-200 grid place-items-center"
+                                data-slide="prev" aria-label="Назад">
+                                <svg class="size-5 opacity-70 group-hover:opacity-100" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <button
+                                class="group size-10 rounded-full bg-purple-600 hover:bg-purple-700 text-white grid place-items-center"
+                                data-slide="next" aria-label="Напред">
+                                <svg class="size-5" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="products-track" class="relative overflow-hidden">
+                        <div
+                            class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-cream-50 to-transparent">
+                        </div>
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-cream-50 to-transparent">
+                        </div>
+
+                        <ul class="flex justify-between snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth no-scrollbar"
+                            aria-label="Слайдер продукти">
+                            <li class="snap-start shrink-0 w-[160px]">
+                                <article class="bg-white">
+                                    <img class="h-48 w-full rounded-md object-cover"
+                                        src="../img/similar_products/cups-cat-img.png" alt="">
+                                    <div class="p-4">
+                                        <h3 class="line-clamp-2 font-semibold">Smart Watch With Bracelet - Black</h3>
+                                        <p class="mt-1 text-neutral-500">25,00 лв.</p>
+                                        <button
+                                            class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
+                                            сега</button>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <!-- CARD 2 -->
+                            <li class="snap-start shrink-0 w-[160px]">
+                                <article class="bg-white">
+                                    <img class="h-48 w-full rounded-md object-cover"
+                                        src="../img/similar_products/candle-img.png" alt="">
+                                    <div class="p-4">
+                                        <h3 class="line-clamp-2 font-semibold">Ароматна Свещ Flower Bouquet</h3>
+                                        <p class="mt-1 text-neutral-500">25,00 лв.</p>
+                                        <button
+                                            class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
+                                            сега</button>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <!-- CARD 3 -->
+                            <li class="snap-start shrink-0 w-[160px]">
+                                <article class="bg-white">
+                                    <img class="h-48 w-full rounded-md object-cover"
+                                        src="../img/similar_products/swallow-img.png" alt="">
+                                    <div class="p-4">
+                                        <h3 class="line-clamp-2 font-semibold">Илюстрация Лястовица</h3>
+                                        <p class="mt-1 text-neutral-500">25,00 лв.</p>
+                                        <button
+                                            class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
+                                            сега</button>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <!-- CARD 4 -->
+                            <li class="snap-start shrink-0 w-[160px]">
+                                <article class="bg-white">
+                                    <img class="h-48 w-full rounded-md object-cover"
+                                        src="../img/similar_products/book-img.png" alt="">
+                                    <div class="p-4">
+                                        <h3 class="line-clamp-2 font-semibold">Книга с илюстрации &quot;Малкият
+                                            принц&quot;</h3>
+                                        <p class="mt-1 text-neutral-500">$29.25</p>
+                                        <button
+                                            class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
+                                            сега</button>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <!-- добави още <li> по нужда -->
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 </body>
