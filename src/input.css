@@ -21,6 +21,10 @@
     @apply font-bold text-gray-900 my-3;
 }
 
+section#review {
+    @apply mt-25 bg-[#C3B2E7];
+}
+
 .testimonial-card {
     @apply bg-white rounded-xl border-2 border-purple-400 p-6 flex flex-col;
 }
@@ -39,4 +43,8 @@
 
 .testimonial-card>div>img {
     @apply w-10 h-10 rounded-full bg-purple-400;
+}
+
+section#gifting {
+    @apply h-150 bg-[#a6d5ff];
 }
