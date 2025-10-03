@@ -20,3 +20,23 @@
 .goals-subtitle {
     @apply font-bold text-gray-900 my-3;
 }
+
+.testimonial-card {
+    @apply bg-white rounded-xl border-2 border-purple-400 p-6 flex flex-col;
+}
+
+.testimonial-card>h3 {
+    @apply font-bold mb-1;
+}
+
+.testimonial-card>p {
+    @apply text-gray-600 flex-1;
+}
+
+.testimonial-card>div {
+    @apply flex items-center mt-2 gap-3;
+}
+
+.testimonial-card>div>img {
+    @apply w-10 h-10 rounded-full bg-purple-400;
+}
