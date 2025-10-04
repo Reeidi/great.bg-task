@@ -52,3 +52,11 @@ section#review {
 section#gifting {
     @apply h-150 bg-[#a6d5ff];
 }
+
+footer {
+    @apply bg-[url('../img/footer/heart.svg')] bg-no-repeat bg-top bg-[length:36%_auto] pt-24;
+}
+
+address>ul>li {
+    @apply flex;
+}
