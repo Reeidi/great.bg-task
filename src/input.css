@@ -21,6 +21,22 @@ section {
     has-[input:checked]:bg-purple-100 has-[input:checked]:border-purple-500 has-[input:checked]:text-purple-700;
 }
 
+.similar-product-card {
+    @apply snap-start shrink-0 w-[200px];
+}
+
+.similar-product-card h3 {
+    @apply line-clamp-2 font-semibold h-14;
+}
+
+.similar-product-card p {
+    @apply mt-1 text-neutral-500;
+}
+
+.similar-product-card button {
+    @apply mt-4 w-full rounded-md bg-purple-600 py-1 text-white font-medium hover:bg-purple-700;
+}
+
 .goals-subtitle {
     @apply font-bold text-gray-900 my-3;
 }

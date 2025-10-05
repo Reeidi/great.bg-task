@@ -8,9 +8,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-300: oklch(83.7% 0.128 66.29);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-violet-100: oklch(94.3% 0.029 294.588);
+    --color-violet-700: oklch(49.1% 0.27 292.581);
     --color-purple-50: oklch(97.7% 0.014 308.299);
     --color-purple-100: oklch(94.6% 0.033 307.174);
     --color-purple-200: oklch(90.2% 0.063 306.703);
@@ -260,8 +264,8 @@
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
-  .right-64 {
-    right: calc(var(--spacing) * 64);
+  .right-100 {
+    right: calc(var(--spacing) * 100);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -289,9 +293,6 @@
   }
   .mx-auto {
     margin-inline: auto;
-  }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -343,12 +344,6 @@
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
-  }
-  .line-clamp-2 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
   }
   .block {
     display: block;
@@ -402,9 +397,6 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
-  .h-48 {
-    height: calc(var(--spacing) * 48);
-  }
   .h-auto {
     height: auto;
   }
@@ -441,9 +433,6 @@
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
-  .w-\[160px\] {
-    width: 160px;
-  }
   .w-full {
     width: 100%;
   }
@@ -474,9 +463,6 @@
   .flex-1 {
     flex: 1;
   }
-  .shrink-0 {
-    flex-shrink: 0;
-  }
   .-translate-y-2 {
     --tw-translate-y: calc(var(--spacing) * -2);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -492,9 +478,6 @@
   }
   .snap-mandatory {
     --tw-scroll-snap-strictness: mandatory;
-  }
-  .snap-start {
-    scroll-snap-align: start;
   }
   .flex-col {
     flex-direction: column;
@@ -523,6 +506,9 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -537,9 +523,6 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
-  }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -622,6 +605,12 @@
   .bg-\[\#FFFEF4\] {
     background-color: #FFFEF4;
   }
+  .bg-amber-100\/80 {
+    background-color: color-mix(in srgb, oklch(96.2% 0.059 95.617) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-100) 80%, transparent);
+    }
+  }
   .bg-blue-300 {
     background-color: var(--color-blue-300);
   }
@@ -655,6 +644,12 @@
   .bg-rose-500 {
     background-color: var(--color-rose-500);
   }
+  .bg-violet-100\/80 {
+    background-color: color-mix(in srgb, oklch(94.3% 0.029 294.588) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-violet-100) 80%, transparent);
+    }
+  }
   .bg-white\/70 {
     background-color: color-mix(in srgb, #fff 70%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -681,9 +676,6 @@
     --tw-gradient-to: transparent;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .object-cover {
-    object-fit: cover;
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -692,6 +684,9 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -707,9 +702,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-2\.5 {
-    padding-block: calc(var(--spacing) * 2.5);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -792,6 +784,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-amber-700 {
+    color: var(--color-amber-700);
+  }
   .text-fuchsia-700 {
     color: var(--color-fuchsia-700);
   }
@@ -803,9 +798,6 @@
   }
   .text-gray-900 {
     color: var(--color-gray-900);
-  }
-  .text-neutral-500 {
-    color: var(--color-neutral-500);
   }
   .text-purple-600 {
     color: var(--color-purple-600);
@@ -821,6 +813,9 @@
   }
   .text-slate-800 {
     color: var(--color-slate-800);
+  }
+  .text-violet-700 {
+    color: var(--color-violet-700);
   }
   .text-white {
     color: var(--color-white);
@@ -851,6 +846,13 @@
       color: var(--color-slate-300);
     }
   }
+  .hover\:bg-amber-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-100);
+      }
+    }
+  }
   .hover\:bg-purple-50 {
     &:hover {
       @media (hover: hover) {
@@ -876,6 +878,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-purple-800);
+      }
+    }
+  }
+  .hover\:bg-violet-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-violet-100);
       }
     }
   }
@@ -1008,6 +1017,39 @@ section {
   }
   &:has(*:is(input:checked)) {
     color: var(--color-purple-700);
+  }
+}
+.similar-product-card {
+  width: 200px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.similar-product-card h3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: calc(var(--spacing) * 14);
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+}
+.similar-product-card p {
+  margin-top: calc(var(--spacing) * 1);
+  color: var(--color-neutral-500);
+}
+.similar-product-card button {
+  margin-top: calc(var(--spacing) * 4);
+  width: 100%;
+  border-radius: var(--radius-md);
+  background-color: var(--color-purple-600);
+  padding-block: calc(var(--spacing) * 1);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-purple-700);
+    }
   }
 }
 .goals-subtitle {

@@ -66,7 +66,34 @@
                 </div>
             </div>
             <div class="flex flex-col">
-                <h2>Обеци Гъбки</h2>
+                <div class="flex justify-between">
+                    <h2><b>Обеци Гъбки</b></h2>
+                    <div class="flex items-center gap-2 justify-end">
+                        <!-- Рейтинг (звезда) -->
+                        <a
+                          href="#rating"
+                          class="inline-flex items-center gap-1 rounded-md bg-amber-100/80
+                                 px-2.5 py-1 text-xs font-medium text-amber-700 hover:bg-amber-100"
+                          aria-label="Рейтинг 4.8 от 5"
+                        >
+                          <!-- звезда -->
+                          <img src="../img/product/star-icon.svg">
+                          4.8
+                        </a>
+                      
+                        <!-- Отзиви -->
+                        <a
+                          href="#reviews"
+                          class="inline-flex items-center gap-1 rounded-md bg-violet-100/80
+                                 px-2.5 py-1 text-xs font-medium text-violet-700 hover:bg-violet-100"
+                        >
+                          <!-- икона балонче -->
+                          <img src="../img/product/comment-icon.svg">
+                          67 Отзива
+                        </a>
+                      </div>
+                </div>
+                
                 <p>Кат. номер: 8418</p>
                 <p>Производител: Epoque Candle</p>
                 <p>Висящи ефектни обеци гъбки, боядисани с черна матова боя,<br> закачени за кръгчета от моделин. Красив
@@ -202,69 +229,50 @@
                         class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-cream-50 to-transparent">
                     </div>
 
-                    <ul class="flex justify-between snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth no-scrollbar"
-                        aria-label="Слайдер продукти">
-                        <li class="snap-start shrink-0 w-[160px]">
+                    <ul class="flex snap-x snap-mandatory gap-20 overflow-x-auto scroll-smooth no-scrollbar">
+                        <li class="similar-product-card">
                             <article>
-                                <img class="h-48 w-full rounded-md object-cover"
-                                    src="../img/similar_products/cups-cat-img.png" alt="">
-                                <div class="p-4">
-                                    <h3 class="line-clamp-2 font-semibold">Smart Watch With Bracelet - Black</h3>
-                                    <p class="mt-1 text-neutral-500">25,00 лв.</p>
-                                    <button
-                                        class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
-                                        сега</button>
+                                <img class="rounded-md" src="../img/similar_products/cups-cat-img.png" alt="">
+                                <div class="pt-4">
+                                    <h3>Smart Watch With Bracelet - Black</h3>
+                                    <p>25,00 лв.</p>
+                                    <button>Купи сега</button>
                                 </div>
                             </article>
                         </li>
 
-                        <!-- CARD 2 -->
-                        <li class="snap-start shrink-0 w-[160px]">
+                        <li class="similar-product-card">
                             <article>
-                                <img class="h-48 w-full rounded-md object-cover"
-                                    src="../img/similar_products/candle-img.png" alt="">
-                                <div class="p-4">
-                                    <h3 class="line-clamp-2 font-semibold">Ароматна Свещ Flower Bouquet</h3>
-                                    <p class="mt-1 text-neutral-500">25,00 лв.</p>
-                                    <button
-                                        class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
-                                        сега</button>
+                                <img class="rounded-md" src="../img/similar_products/candle-img.png" alt="">
+                                <div class="pt-4">
+                                    <h3>Ароматна Свещ Flower Bouquet</h3>
+                                    <p>25,00 лв.</p>
+                                    <button>Купи сега</button>
                                 </div>
                             </article>
                         </li>
 
-                        <!-- CARD 3 -->
-                        <li class="snap-start shrink-0 w-[160px]">
+                        <li class="similar-product-card">
                             <article>
-                                <img class="h-48 w-full rounded-md object-cover"
-                                    src="../img/similar_products/swallow-img.png" alt="">
-                                <div class="p-4">
-                                    <h3 class="line-clamp-2 font-semibold">Илюстрация Лястовица</h3>
-                                    <p class="mt-1 text-neutral-500">25,00 лв.</p>
-                                    <button
-                                        class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
-                                        сега</button>
+                                <img class="rounded-md" src="../img/similar_products/swallow-img.png" alt="">
+                                <div class="pt-4">
+                                    <h3>Илюстрация Лястовица</h3>
+                                    <p>25,00 лв.</p>
+                                    <button>Купи сега</button>
                                 </div>
                             </article>
                         </li>
 
-                        <!-- CARD 4 -->
-                        <li class="snap-start shrink-0 w-[160px]">
+                        <li class="similar-product-card">
                             <article>
-                                <img class="h-48 w-full rounded-md object-cover"
-                                    src="../img/similar_products/book-img.png" alt="">
-                                <div class="p-4">
-                                    <h3 class="line-clamp-2 font-semibold">Книга с илюстрации &quot;Малкият
-                                        принц&quot;</h3>
-                                    <p class="mt-1 text-neutral-500">$29.25</p>
-                                    <button
-                                        class="mt-4 w-full rounded-xl bg-purple-600 py-2.5 text-white font-medium hover:bg-purple-700">Купи
-                                        сега</button>
+                                <img class="rounded-md" src="../img/similar_products/book-img.png" alt="">
+                                <div class="pt-4">
+                                    <h3>Книга с илюстрации &quot;Малкият принц&quot;</h3>
+                                    <p>$29.25</p>
+                                    <button>Купи сега</button>
                                 </div>
                             </article>
                         </li>
-
-                        <!-- добави още <li> по нужда -->
                     </ul>
                 </div>
             </div>
@@ -428,7 +436,7 @@
                         <img src="../img/gifting/image3.png" alt="" class="w-24 rounded-xl" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-10 right-64">
+                    <figure class="hidden md:block absolute top-10 right-100">
                         <img src="../img/gifting/image4.png" alt="" class="w-24 rounded-xl" />
                     </figure>
 
