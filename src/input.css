@@ -5,20 +5,24 @@
 }
 
 section {
-    @apply px-[15%] py-12;
+    @apply px-4 sm:px-6 md:px-8 xl:px-[15%];
+    @apply py-8 lg:py-12;
+}
+
+section#product {
+    @apply max-w-screen-xl flex flex-col md:flex-row md:items-start gap-8 xl:gap-14;
 }
 
 .color-radio-button {
-    @apply w-8 h-8 rounded-full border-2 border-transparent cursor-pointer flex items-center justify-center;
+    @apply w-10 h-10 sm:w-8 sm:h-8 rounded-full border-2 border-transparent cursor-pointer flex items-center justify-center;
 }
 
 .color-radio-button-span {
-    @apply w-6 h-6 rounded-full peer-checked:ring-2 peer-checked:ring-purple-500 peer-checked:ring-offset-2;
+    @apply w-10 h-10 sm:w-6 sm:h-6 rounded-full peer-checked:ring-2 peer-checked:ring-purple-500 peer-checked:ring-offset-2;
 }
 
 .size-radio-button {
-    @apply px-3 py-1 rounded-md border border-gray-300 bg-gray-100 text-sm font-medium
-    has-[input:checked]:bg-purple-100 has-[input:checked]:border-purple-500 has-[input:checked]:text-purple-700;
+    @apply px-3 py-1 rounded-md border border-gray-300 bg-gray-100 text-sm font-medium has-[input:checked]:bg-purple-100 has-[input:checked]:border-purple-500 has-[input:checked]:text-purple-700;
 }
 
 .similar-product-card {
@@ -26,7 +30,7 @@ section {
 }
 
 .similar-product-card h3 {
-    @apply line-clamp-2 font-semibold h-14;
+    @apply line-clamp-2 font-semibold h-14 text-base sm:text-lg;
 }
 
 .similar-product-card p {
@@ -37,24 +41,32 @@ section {
     @apply mt-4 w-full rounded-md bg-purple-600 py-1 text-white font-medium hover:bg-purple-700;
 }
 
+.goals-item {
+    @apply w-full sm:flex-1 min-w-0;
+}
+
 .goals-subtitle {
     @apply font-bold text-gray-900 my-3;
 }
 
+.goals-separator {
+    @apply bg-gray-200 w-full h-px my-2 sm:my-0 sm:h-44 sm:w-px sm:mx-6;
+}
+
 section#review {
-    @apply bg-[#C3B2E7] ;
+    @apply bg-[#C3B2E7];
 }
 
 .testimonial-card {
-    @apply bg-white rounded-xl border-2 border-purple-400 p-6 flex flex-col;
+    @apply bg-white rounded-xl border-2 border-purple-400 p-6 flex flex-col shrink-0 snap-start w-[85vw] sm:w-[380px] md:w-[420px];
 }
 
 .testimonial-card>h3 {
-    @apply font-bold mb-1;
+    @apply text-lg font-semibold mb-1;
 }
 
 .testimonial-card>p {
-    @apply text-gray-600 flex-1;
+    @apply text-gray-600 flex-1 mt-2;
 }
 
 .testimonial-card>div {
@@ -66,11 +78,20 @@ section#review {
 }
 
 section#gifting {
-    @apply h-150 bg-[#a6d5ff];
+    @apply h-auto md:h-150 bg-[#a6d5ff];
+}
+
+.floating-image {
+    @apply hidden md:block absolute;
+}
+
+.floating-image>img {
+    @apply  rounded-xl;
 }
 
 footer {
-    @apply bg-[url('../img/footer/heart.svg')] bg-no-repeat bg-top bg-[length:36%_auto] pt-24;
+    @apply bg-[url('../img/footer/heart.svg')] bg-no-repeat bg-bottom lg:bg-top bg-[length:36%_auto] pt-24;
+    background-size: 50%;
 }
 
 address>ul>li {

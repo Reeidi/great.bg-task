@@ -11,119 +11,123 @@
 <body class="bg-[#FFFEF4]">
     <header>
         <nav class="flex flex-wrap items-center justify-between gap-y-4 mt-6 px-4 sm:px-6 lg:px-12 relative">
-          <!-- Лого -->
-          <img src="../img/Logo.svg" alt="" class="h-8 w-auto order-1" />
-      
-          <!-- Хамбургер чекбокс (peer) -->
-          <input id="nav-toggle" type="checkbox" class="sr-only peer order-2" />
-      
-          <!-- Хамбургер бутон (само мобилно) -->
-          <label for="nav-toggle"
-                 class="order-2 sm:hidden inline-flex items-center justify-center p-2 rounded-md hover:bg-slate-100"
-                 aria-label="Toggle menu">
-            <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </label>
-      
-          <!-- Меню -->
-          <ul class="order-3 w-full basis-full
+            <!-- Лого -->
+            <img src="../img/Logo.svg" alt="" class="h-8 w-auto order-1" />
+
+            <!-- Хамбургер чекбокс (peer) -->
+            <input id="nav-toggle" type="checkbox" class="sr-only peer order-2" />
+
+            <!-- Хамбургер бутон (само мобилно) -->
+            <label for="nav-toggle"
+                class="order-2 sm:hidden inline-flex items-center justify-center p-2 mr-auto rounded-md hover:bg-slate-100"
+                aria-label="Toggle menu">
+                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 7h16M4 12h16M4 17h16" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </label>
+
+            <!-- Меню -->
+            <ul class="order-3 w-full basis-full
                      hidden sm:flex sm:w-auto sm:basis-auto
                      flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-sm
                      peer-checked:block
                      sm:peer-checked:flex
                      sm:order-2">
-            <li>Продукти</li>
-            <li>Блог</li>
-            <li>Специален допир</li>
-            <li>Партньори</li>
-            <li>Корпоративни клиенти</li>
-            <li>Контакти</li>
-          </ul>
-      
-          <!-- Десни иконки -->
-          <div class="order-2 sm:order-3 flex items-center gap-3 sm:gap-4 text-slate-800 ml-auto">
-            <label class="relative hidden sm:block">
-              <span class="pointer-events-none absolute inset-y-0 left-3 flex items-center">
-                <svg class="size-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <circle cx="11" cy="11" r="7" stroke-width="2" />
-                  <path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round" />
-                </svg>
-              </span>
-              <input type="text" placeholder="Търси тук..."
-                     class="h-8 w-40 md:w-56 lg:w-64 rounded-full border border-slate-200 pl-9 pr-3 text-sm placeholder:text-slate-300
+                <li>Продукти</li>
+                <li>Блог</li>
+                <li>Специален допир</li>
+                <li>Партньори</li>
+                <li>Корпоративни клиенти</li>
+                <li>Контакти</li>
+            </ul>
+
+            <!-- Десни иконки -->
+            <div class="order-2 sm:order-3 flex items-center gap-3 sm:gap-4 text-slate-800">
+                <label class="relative hidden sm:block">
+                    <span class="pointer-events-none absolute inset-y-0 left-3 flex items-center">
+                        <svg class="size-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="7" stroke-width="2" />
+                            <path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <input type="text" placeholder="Търси тук..."
+                        class="h-8 w-40 md:w-56 lg:w-64 rounded-full border border-slate-200 pl-9 pr-3 text-sm placeholder:text-slate-300
                             focus:outline-none focus:ring-2 focus:ring-slate-300/60 focus:border-slate-300 bg-white/70" />
-            </label>
-      
-            <button class="relative inline-flex items-center justify-center p-1.5 rounded-md hover:bg-slate-100">
-              <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M6 7h12l-1 12H7L6 7Z" stroke-width="1.5" />
-                <path d="M9 10V7a3 3 0 1 1 6 0v3" stroke-width="1.5" />
-              </svg>
-              <span class="absolute -top-1 -right-1 min-w-4 h-4 px-1 rounded-full bg-rose-500 text-white text-[10px] leading-4 grid place-items-center shadow-sm">1</span>
-            </button>
-      
-            <button class="inline-flex items-center justify-center p-1.5 rounded-md hover:bg-slate-100">
-              <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <circle cx="12" cy="8" r="4" stroke-width="1.5" />
-                <path d="M6 20a6 6 0 1 1 12 0" stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-            </button>
-          </div>
+                </label>
+
+                <button class="relative inline-flex items-center justify-center p-1.5 rounded-md hover:bg-slate-100">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 7h12l-1 12H7L6 7Z" stroke-width="1.5" />
+                        <path d="M9 10V7a3 3 0 1 1 6 0v3" stroke-width="1.5" />
+                    </svg>
+                    <span
+                        class="absolute -top-1 -right-1 min-w-4 h-4 px-1 rounded-full bg-rose-500 text-white text-[10px] leading-4 grid place-items-center shadow-sm">1</span>
+                </button>
+
+                <button class="inline-flex items-center justify-center p-1.5 rounded-md hover:bg-slate-100">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="8" r="4" stroke-width="1.5" />
+                        <path d="M6 20a6 6 0 1 1 12 0" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
         </nav>
     </header>
-      
+
     <main>
-        <section id="product" class="flex gap-20">
-            <div class="w-2/5">
-                <img src="../img/product/product_big.png" alt="">
-                <div class="flex gap-4.5 mt-6">
-                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small1.png" alt="">
-                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small2.png" alt="">
-                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small1.png" alt="">
-                    <img class="flex-1 min-w-0 w-full h-auto" src="../img/product/product_small3.png" alt="">
+        <section id="product">
+            <div class="w-full md:w-2/5">
+                <img src="../img/product/product_big.png" alt="" class="w-[120%] h-auto max-w-[100%]">
+
+                <div class="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-3 md:gap-4.5 mt-6">
+                    <img class="flex-1 min-w-0 w-[calc(50%-0.25rem)] sm:w-auto h-auto"
+                        src="../img/product/product_small1.png" alt="">
+                    <img class="flex-1 min-w-0 w-[calc(50%-0.25rem)] sm:w-auto h-auto"
+                        src="../img/product/product_small2.png" alt="">
+                    <img class="flex-1 min-w-0 w-[calc(50%-0.25rem)] sm:w-auto h-auto"
+                        src="../img/product/product_small1.png" alt="">
+                    <img class="flex-1 min-w-0 w-[calc(50%-0.25rem)] sm:w-auto h-auto"
+                        src="../img/product/product_small3.png" alt="">
                 </div>
             </div>
-            <div class="flex flex-col">
-                <div class="flex justify-between mb-2">
-                    <h1 class="text-3xl"><b>Обеци Гъбки</b></h1>
-                    <div class="flex items-center gap-2 justify-end">
+
+            <div class="w-full md:w-3/5 flex flex-col">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-2">
+                    <h1 class="text-2xl sm:text-3xl font-bold">Обеци Гъбки</h1>
+
+                    <div class="flex items-center gap-2 sm:justify-end">
                         <!-- Рейтинг (звезда) -->
-                        <a
-                          href="#rating"
-                          class="inline-flex items-center gap-1 rounded-md bg-amber-100/80
-                                 px-2.5 py-1 text-xs font-medium text-amber-700 hover:bg-amber-100"
-                          aria-label="Рейтинг 4.8 от 5"
-                        >
-                          <!-- звезда -->
-                          <img src="../img/product/star-icon.svg">
-                          4.8
+                        <a href="#rating" class="inline-flex items-center gap-1 rounded-md bg-amber-100/80
+px-2.5 py-1 text-xs font-medium text-amber-700 hover:bg-amber-100" aria-label="Рейтинг 4.8 от 5">
+                            <img src="../img/product/star-icon.svg">
+                            4.8
                         </a>
-                      
+
                         <!-- Отзиви -->
-                        <a
-                          href="#reviews"
-                          class="inline-flex items-center gap-1 rounded-md bg-violet-100/80
-                                 px-2.5 py-1 text-xs font-medium text-violet-700 hover:bg-violet-100"
-                        >
-                          <!-- икона балонче -->
-                          <img src="../img/product/comment-icon.svg">
-                          67 Отзива
+                        <a href="#reviews" class="inline-flex items-center gap-1 rounded-md bg-violet-100/80
+px-2.5 py-1 text-xs font-medium text-violet-700 hover:bg-violet-100">
+                            <img src="../img/product/comment-icon.svg">
+                            67 Отзива
                         </a>
-                      </div>
+                    </div>
                 </div>
-                
+
                 <p><span class="text-gray-500">Кат. номер:</span> <b>8418</b></p>
                 <p><span class="text-gray-500">Производител:</span> <b>Epoque Candle</b></p>
-                <p class="my-2">Висящи ефектни обеци гъбки, боядисани с черна матова боя,<br> закачени за кръгчета от моделин. Красив
-                    и артистичен акцент <br> във визията на дамите.</p>
+
+                <p class="my-2 text-sm sm:text-base">
+                    Висящи ефектни обеци гъбки, боядисани с черна матова боя,<br class="hidden sm:inline">
+                    закачени за кръгчета от моделин. Красив и артистичен акцент <br class="hidden sm:inline">
+                    във визията на дамите.
+                </p>
+
                 <p><b>Материал:</b> месинг, матова черна боя, стоманени щифтове</p>
                 <p><b>Размер:</b> дължина - 7.5 см</p>
 
-                <hr class="h-0.5 bg-gray-400 border-0 mt-2 mb-3">
+                <hr class="h-0.5 bg-gray-300 border-0 mt-3 mb-4">
 
                 <h3 class="mb-2">Изберете цвят</h3>
-                <div class="flex gap-3">
+                <div class="flex flex-wrap gap-3">
                     <label class="color-radio-button">
                         <input type="radio" name="color" class="hidden peer">
                         <span class="color-radio-button-span bg-orange-300"></span>
@@ -142,14 +146,14 @@
                     </label>
                     <label class="color-radio-button">
                         <input type="radio" name="color" class="hidden peer">
-                        <span class="color-radio-button-span bg-gradient-to-b  from-green-300 to-pink-300"></span>
+                        <span class="color-radio-button-span bg-gradient-to-b from-green-300 to-pink-300"></span>
                     </label>
                 </div>
 
-                <hr class="h-0.5 bg-gray-400 border-0 mt-2 mb-3">
+                <hr class="h-0.5 bg-gray-300 border-0 mt-3 mb-4">
 
                 <h3 class="mb-2">Изберете размер</h3>
-                <div class="flex gap-3">
+                <div class="flex flex-wrap gap-2 sm:gap-3">
                     <span class="size-radio-button">
                         <input type="radio" name="size" value="S" class="peer" checked>
                         S
@@ -172,28 +176,30 @@
                     </span>
                 </div>
 
-                <div class="flex items-center gap-4 mt-8">
-                    <div class="text-2xl my-2 font-extrabold">30.00лв</div>
-                    <div class="flex items-center gap-2 ml-3">
-                        <button id="minus" class="w-8 h-8 grid place-items-center rounded-md border border-purple-500 text-purple-600
-                                 hover:bg-purple-50 disabled:opacity-40 disabled:cursor-not-allowed"
-                            aria-label="Намали">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mt-8">
+                    <div class="text-2xl my-0 font-extrabold">30.00лв</div>
+
+                    <div class="flex items-center gap-2">
+                        <button id="minus" class="w-9 h-9 grid place-items-center rounded-md border border-purple-500 text-purple-600
+            hover:bg-purple-50 disabled:opacity-40 disabled:cursor-not-allowed" aria-label="Намали">
                             –
                         </button>
 
                         <span id="qty" class="min-w-6 text-center">2</span>
 
-                        <button id="plus" class="w-8 h-8 grid place-items-center rounded-md border border-purple-500 text-purple-600
-                                 hover:bg-purple-50" aria-label="Увеличи">
+                        <button id="plus" class="w-9 h-9 grid place-items-center rounded-md border border-purple-500 text-purple-600
+            hover:bg-purple-50" aria-label="Увеличи">
                             +
                         </button>
                     </div>
                 </div>
-                <button class="bg-purple-700 hover:bg-purple-800 text-white font-medium py-2 px-2 rounded-md w-40 mt-8">
+
+                <button class="bg-purple-700 hover:bg-purple-800 text-white font-medium py-2 px-2 rounded-md
+w-full sm:w-40 mt-6">
                     Поръчай сега
                 </button>
 
-                <div class="max-w-md border rounded-lg divide-y mt-4 mx-0 ml-0">
+                <div class="w-full max-w-md border rounded-lg divide-y mt-4">
                     <div class="flex gap-3 p-4 items-start">
                         <img src="../img/product/truck-icon.svg">
                         <div>
@@ -217,14 +223,13 @@
         </section>
 
         <section id="similar_products">
-            <div class="mx-auto max-w-6xl px-4">
-                <div class="mb-6 flex items-center justify-between">
-                    <h2 class="text-3xl font-bold">Подобни продукти</h2>
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <h2 class="text-2xl sm:text-3xl font-bold">Подобни продукти</h2>
 
-                    <div class="flex items-center gap-3">
-                        <button
-                            class="group size-10 rounded-full bg-purple-100 hover:bg-purple-200 grid place-items-center"
-                            data-slide="prev" aria-label="Назад">
+                    <div class="flex items-center gap-3 self-end sm:self-auto">
+                        <button class="group size-10 rounded-full bg-purple-100 hover:bg-purple-200 grid place-items-center
+                           disabled:opacity-40 disabled:cursor-not-allowed" data-slide="prev" aria-label="Назад">
                             <svg class="size-5 opacity-70 group-hover:opacity-100" viewBox="0 0 24 24" fill="none">
                                 <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" />
@@ -241,54 +246,61 @@
                 </div>
 
                 <div id="products-track" class="relative overflow-hidden">
-                    <div
-                        class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-cream-50 to-transparent">
-                    </div>
-                    <div
-                        class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-cream-50 to-transparent">
-                    </div>
-
-                    <ul class="flex snap-x snap-mandatory gap-20 overflow-x-auto scroll-smooth no-scrollbar">
+                    <ul class="flex snap-x snap-mandatory gap-6 sm:gap-10 lg:gap-20 overflow-x-auto scroll-smooth no-scrollbar
+                           px-4 sm:mx-0 sm:px-0">
                         <li class="similar-product-card">
                             <article>
-                                <img class="rounded-md" src="../img/similar_products/cups-cat-img.png" alt="">
-                                <div class="pt-4">
+                                <img class="rounded-sm w-full h-auto max-w-full"
+                                    src="../img/similar_products/cups-cat-img.png" alt="">
+                                <div class="pt-3 sm:pt-4">
                                     <h3>Smart Watch With Bracelet - Black</h3>
                                     <p>25,00 лв.</p>
-                                    <button>Купи сега</button>
+                                    <button>
+                                        Купи сега
+                                    </button>
                                 </div>
                             </article>
                         </li>
 
                         <li class="similar-product-card">
                             <article>
-                                <img class="rounded-md" src="../img/similar_products/candle-img.png" alt="">
-                                <div class="pt-4">
+                                <img class="rounded-sm w-full h-auto max-w-full"
+                                    src="../img/similar_products/candle-img.png" alt="">
+                                <div class="pt-3 sm:pt-4">
                                     <h3>Ароматна Свещ Flower Bouquet</h3>
                                     <p>25,00 лв.</p>
-                                    <button>Купи сега</button>
+                                    <button>
+                                        Купи сега
+                                    </button>
                                 </div>
                             </article>
                         </li>
 
                         <li class="similar-product-card">
                             <article>
-                                <img class="rounded-md" src="../img/similar_products/swallow-img.png" alt="">
-                                <div class="pt-4">
+                                <img class="rounded-sm w-full h-auto max-w-full"
+                                    src="../img/similar_products/swallow-img.png" alt="">
+                                <div class="pt-3 sm:pt-4">
                                     <h3>Илюстрация Лястовица</h3>
                                     <p>25,00 лв.</p>
-                                    <button>Купи сега</button>
+                                    <button>
+                                        Купи сега
+                                    </button>
                                 </div>
                             </article>
                         </li>
 
                         <li class="similar-product-card">
                             <article>
-                                <img class="rounded-md" src="../img/similar_products/book-img.png" alt="">
-                                <div class="pt-4">
-                                    <h3>Книга с илюстрации &quot;Малкият принц&quot;</h3>
+                                <img class="rounded-sm w-full h-auto max-w-full"
+                                    src="../img/similar_products/book-img.png" alt="">
+                                <div class="pt-3 sm:pt-4">
+                                    <h3>Книга с илюстрации &quot;Малкият
+                                        принц&quot;</h3>
                                     <p>$29.25</p>
-                                    <button>Купи сега</button>
+                                    <button>
+                                        Купи сега
+                                    </button>
                                 </div>
                             </article>
                         </li>
@@ -298,126 +310,128 @@
         </section>
 
         <section id="goals">
-            <div class="mb-12 flex justify-center">
-                <h2 class="text-center text-4xl font-extrabold text-gray-900">
+            <div class="mb-10 flex flex-col items-center justify-center text-center">
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
                     С какво се различава
-                    <br>
-                    <span
-                        class="highlight-word-blue translate-y-2">
-                        Great.bg
-                    </span>
+                    <br class="hidden sm:inline">
+                    <span class="highlight-word-blue translate-y-2 inline-block">Great.bg</span>
                     ?
                 </h2>
-                <img src="../img/goals/arrow.svg" class="mt-3 ml-2">
+                <img src="../img/goals/arrow.svg" class="mt-3 sm:ml-2" alt="">
             </div>
 
-            <div class="flex gap-4">
-                <div>
-                    <img src="../img/goals/handshake-icon.svg" alt="" class="w-8">
-                    <h2 class="goals-subtitle">Подкрепа на занаятчии</h2>
-                    <p class="text-gray-600">
-                        Ние сме ангажирани с подкрепата на занаятчии, които създават своите произведения с любов и
-                        изключително майсторство.
-                    </p>
-                </div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 sm:gap-4">
+                    <div class="goals-item">
+                        <img src="../img/goals/handshake-icon.svg" alt="" class="w-8">
+                        <h2 class="goals-subtitle">Подкрепа на занаятчии</h2>
+                        <p class="text-gray-600">Ние сме ангажирани с подкрепата на занаятчии, които създават своите
+                            произведения с любов и
+                            изключително майсторство.</p>
+                    </div>
 
-                <div class="lock w-px bg-gray-200 mx-auto"></div>
+                    <div class="goals-separator"></div>
 
-                <div>
-                    <img src="../img/goals/lighbulb-icon.svg" alt="" class="w-8">
-                    <h2 class="goals-subtitle">Уникалност и креативност</h2>
-                    <p class="text-gray-600">
-                        Всеки артикул е ръчно изработен, което гарантира, че няма два напълно еднакви продукта. Това
-                        прави подаръка уникален.
-                    </p>
-                </div>
+                    <div class="goals-item">
+                        <img src="../img/goals/lighbulb-icon.svg" alt="" class="w-8">
+                        <h2 class="goals-subtitle">Уникалност и креативност</h2>
+                        <p class="text-gray-600">Всеки артикул е ръчно изработен, което гарантира, че няма два напълно
+                            еднакви продукта. Това
+                            прави подаръка уникален.</p>
+                    </div>
 
-                <div class="block w-px bg-gray-200 mx-auto"></div>
+                    <div class="goals-separator"></div>
 
-                <div>
-                    <img src="../img/goals/medal-icon.svg" alt="" class="w-8">
-                    <h2 class="goals-subtitle">Високо качество</h2>
-                    <p class="text-gray-600">
-                        Предлагаме продукти, които не само изглеждат страхотно, но и са изработени с грижа и
-                        внимание към детайла.
-                    </p>
+                    <div class="goals-item">
+                        <img src="../img/goals/medal-icon.svg" alt="" class="w-8">
+                        <h2 class="goals-subtitle">Високо качество</h2>
+                        <p class="text-gray-600">Предлагаме продукти, които не само изглеждат страхотно, но и са
+                            изработени с грижа и
+                            внимание към детайла.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="review">
-            <div class="flex mb-12 justify-between">
-
-                <div class="flex">
-                    <h2 class="text-2xl font-extrabold text-gray-900 ">
-                        Не взимай само нашето <br> мнение под внимание
-                    </h2>
-                    <img src="../img/review/arrow.svg" class="ml-5 h-40">
-                </div>
-
-                <div class="flex flex-col justify-end mr-20">
-                    <div class="flex gap-3">
-                        <button
-                            class="group size-10 rounded-full bg-purple-100 hover:bg-purple-200 grid place-items-center"
-                            data-slide="prev" aria-label="Назад">
-                            <svg class="size-5 opacity-70 group-hover:opacity-100" viewBox="0 0 24 24" fill="none">
-                                <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" />
-                            </svg>
-                        </button>
-                        <button
-                            class="group size-10 rounded-full bg-purple-600 hover:bg-purple-700 text-white grid place-items-center"
-                            data-slide="next" aria-label="Напред">
-                            <svg class="size-5" viewBox="0 0 24 24" fill="none">
-                                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                            </svg>
-                        </button>
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <!-- Header -->
+                <div class="mb-8 sm:mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                    <div class="flex items-start">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight">
+                            Не взимай само нашето <br class="hidden sm:inline"> мнение под внимание
+                        </h2>
+                        <img src="../img/review/arrow.svg" class="ml-3 sm:ml-5 h-20 sm:h-28 md:h-40" alt="">
                     </div>
-                </div>
-            </div>
 
-            <div class="flex gap-5 overflow-visible">
-                <div class="testimonial-card">
-                    <h3>Страхотни бижута!</h3>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat aute irure sint amet occaecat cupidatat non proident.
-                    </p>
-                    <div>
-                        <img src="../img/review/sophia.png" alt="Sophia">
-                        <div>
-                            <p class="font-semibold text-sm">Sophia Moore</p>
-                            <p class="text-xs text-gray-500">CEO at Webflow Agency</p>
+                    <div class="flex sm:flex-col justify-end sm:justify-end sm:items-end">
+                        <div class="flex gap-3">
+                            <button class="group size-10 rounded-full bg-purple-100 hover:bg-purple-200 grid place-items-center
+                             disabled:opacity-40 disabled:cursor-not-allowed" data-slide="prev" aria-label="Назад">
+                                <svg class="size-5 opacity-70 group-hover:opacity-100" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <button
+                                class="group size-10 rounded-full bg-purple-600 hover:bg-purple-700 text-white grid place-items-center"
+                                data-slide="next" aria-label="Напред">
+                                <svg class="size-5" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonial-card">
-                    <h3>Перфектните подаръци!</h3>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat aute irure sint amet occaecat cupidatat non proident.
-                    </p>
-                    <div>
-                        <img src="../img/review/adam.png" alt="Adam">
-                        <div>
-                            <p class="font-semibold text-sm">Adam Smith</p>
-                            <p class="text-xs text-gray-500">Webflow Developer</p>
+                <!-- Cards -->
+                <div class="relative">
+                    <div
+                        class="flex gap-4 sm:gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
+                        <div class="testimonial-card">
+                            <h3>Страхотни бижута!</h3>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat aute irure sint amet occaecat cupidatat non proident.
+                            </p>
+                            <div>
+                                <img src="../img/review/sophia.png" alt="Sophia" />
+                                <div>
+                                    <p class="font-semibold text-sm">Sophia Moore</p>
+                                    <p class="text-xs text-gray-500">CEO at Webflow Agency</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="testimonial-card">
-                    <h3>Супер качество на продуктите!</h3>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat aute irure sint amet occaecat cupidatat non proident.
-                    </p>
-                    <div>
-                        <img src="../img/review/mike.png" alt="Mike">
-                        <div>
-                            <p class="font-semibold text-sm">Mike Warren</p>
-                            <p class="text-xs text-gray-500">Developer at BRIX Templates</p>
+                        <div class="testimonial-card">
+                            <h3>Перфектните подаръци!</h3>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat aute irure sint amet occaecat cupidatat non proident.
+                            </p>
+                            <div>
+                                <img src="../img/review/adam.png" alt="Adam" />
+                                <div>
+                                    <p class="font-semibold text-sm">Adam Smith</p>
+                                    <p class="text-xs text-gray-500">Webflow Developer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <h3>Супер качество на продуктите!</h3>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat aute irure sint amet occaecat cupidatat non proident.
+                            </p>
+                            <div>
+                                <img src="../img/review/mike.png" alt="Mike" />
+                                <div>
+                                    <p class="font-semibold text-sm">Mike Warren</p>
+                                    <p class="text-xs text-gray-500">Developer at BRIX Templates</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -425,66 +439,62 @@
         </section>
 
         <section id="gifting">
-            <div class="relative mx-auto px-4 pt-40">
-                <div class="mx-auto text-center w-2/5">
-                    <h2 class="text-center text-4xl font-extrabold text-gray-900">
+            <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto text-center w-full md:w-2/5">
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
                         Подаряването става
-                        <br>
+                        <br class="hidden sm:inline">
                         толкова
-                        <span
-                            class="highlight-word-blue">
-                            лесно
-                        </span>
+                        <span class="highlight-word-blue inline-block">лесно</span>
                     </h2>
-                    <p class="mt-5 text-slate-600 text-sm">
+                    <p class="mt-4 sm:mt-5 text-slate-600 text-sm sm:text-base">
                         Изпращайте перфектния подарък всеки път. Нашият магазин за подаръци е пълен със стотици водещи
                         марки и е внимателно подбран за всякакви поводи.
                     </p>
                 </div>
 
                 <div class="pointer-events-none select-none">
-                    <figure class="hidden md:block absolute top-2 left-20">
-                        <img src="../img/gifting/image1.png" alt="" class="w-48 rounded-xl" />
+                    <figure class="floating-image top-2 left-20">
+                        <img src="../img/gifting/image1.png" alt="" class="w-24 md:w-32 lg:w-48" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-82 -left-8">
-                        <img src="../img/gifting/image2.png" alt="" class="w-48 rounded-xl" />
+                    <figure class="floating-image top-82 -left-8">
+                        <img src="../img/gifting/image2.png" alt="" class="w-24 md:w-32 lg:w-48" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-48 -left-48">
-                        <img src="../img/gifting/image3.png" alt="" class="w-32 rounded-xl" />
+                    <figure class="floating-image top-48 -left-48">
+                        <img src="../img/gifting/image3.png" alt="" class="w-20 md:w-24 lg:w-32" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-1 left-168">
-                        <img src="../img/gifting/image4.png" alt="" class="w-32 rounded-xl" />
+                    <figure class="floating-image top-1 left-168">
+                        <img src="../img/gifting/image4.png" alt="" class="w-20 md:w-24 lg:w-32" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-98 left-112">
-                        <img src="../img/gifting/image5.png" alt="" class="w-32 rounded-xl" />
+                    <figure class="floating-image top-98 left-112">
+                        <img src="../img/gifting/image5.png" alt="" class="w-20 md:w-24 lg:w-32" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-36 left-220">
-                        <img src="../img/gifting/image6.png" alt="" class="w-48 rounded-xl" />
+                    <figure class="floating-image top-36 left-220">
+                        <img src="../img/gifting/image6.png" alt="" class="w-24 md:w-32 lg:w-48" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-86 left-192">
-                        <img src="../img/gifting/image7.png" alt="" class="w-32 rounded-xl" />
+                    <figure class="floating-image top-86 left-192">
+                        <img src="../img/gifting/image7.png" alt="" class="w-20 md:w-24 lg:w-32" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-92 left-230">
-                        <img src="../img/gifting/image8.png" alt="" class="w-48 rounded-xl" />
+                    <figure class="floating-image top-92 left-230">
+                        <img src="../img/gifting/image8.png" alt="" class="w-24 md:w-32 lg:w-48" />
                     </figure>
                 </div>
             </div>
         </section>
 
         <section id="present">
-            <div class="relative mx-auto px-4 pt-20 py-40">
+            <div class="relative mx-auto px-4 pt-4 md:pt-20 md:py-40">
                 <div class="mx-auto text-center w-3/4">
-                    <h2 class="text-center text-4xl font-extrabold text-gray-900">
+                    <h2 class="text-2xl font-extrabold text-gray-900 leading-tight">
                         Открийте своя
-                        <span
-                            class="highlight-word-blue -translate-y-2">
+                        <span class="highlight-word-blue inline-block sm:-translate-y-2">
                             уникален
                         </span>
                         подарък
@@ -503,20 +513,20 @@
                 </div>
 
                 <div class="pointer-events-none select-none">
-                    <figure class="hidden md:block absolute top-2 -left-32">
-                        <img src="../img/present/present.png" alt="" class="w-48 rounded-xl" />
+                    <figure class="floating-image top-2 -left-32">
+                        <img src="../img/present/present.png" alt="" class="w-48" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-70 left-15">
-                        <img src="../img/present/heart-1.png" alt="" class="w-32 rounded-xl" />
+                    <figure class="floating-image top-70 left-15">
+                        <img src="../img/present/heart-1.png" alt="" class="w-32" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-5 left-240">
-                        <img src="../img/present/heart-2.png" alt="" class="w-48 rounded-xl" />
+                    <figure class="floating-image top-5 left-240">
+                        <img src="../img/present/heart-2.png" alt="" class="w-48" />
                     </figure>
 
-                    <figure class="hidden md:block absolute top-64 right-1">
-                        <img src="../img/present/candle.png" alt="" class="w-32 rounded-xl" />
+                    <figure class="floating-image top-64 right-1">
+                        <img src="../img/present/candle.png" alt="" class="w-32" />
                     </figure>
                 </div>
             </div>
@@ -526,10 +536,9 @@
     <footer>
         <div class="relative mx-auto max-w-screen-xl px-4">
 
-            <!-- ГОРНА ЧАСТ -->
-            <div class="flex justify-evenly">
-                <!-- 1) ЛОГО + ОПИСАНИЕ + СОЦИАЛКИ -->
-                <div class="space-y-4">
+            <!-- Лого и социални мрежи -->
+            <div class="flex flex-col sm:flex-row justify-evenly gap-12">
+                <div class="space-y-4 mx-auto sm:mx-0">
                     <div class="flex items-center gap-2">
                         <img src="../img/Logo.svg" alt="">
                     </div>
@@ -539,18 +548,15 @@
                         with the possibility to target the low.
                     </p>
                     <div class="flex items-center gap-4 text-fuchsia-700">
-                        <!-- <a class="hover:underline" href="#">Facebook</a>
-                        <a class="hover:underline" href="#">Instagram</a>
-                        <a class="hover:underline" href="#">LinkedIn</a>
-                        <a class="hover:underline" href="#">YouTube</a> -->
-                        <img src="../img/footer/Facebook.png" alt="" />
-                        <img src="../img/footer/Instagram.png" alt="" />
-                        <img src="../img/footer/LinkedIn.png" alt="" />
-                        <img src="../img/footer/YouTube.png" alt="" />
+                        <a href="#"><img src="../img/footer/Facebook.png" alt="Facebook" /></a>
+                        <a href="#"><img src="../img/footer/Instagram.png" alt="Instagram" /></a>
+                        <a href="#"><img src="../img/footer/LinkedIn.png" alt="LinkedIn" /></a>
+                        <a href="#"><img src="../img/footer/YouTube.png" alt="YouTube" /></a>
                     </div>
                 </div>
 
-                <div class="flex">
+                <!-- Навигация -->
+                <div class="flex flex-col sm:flex-row mx-auto sm:mx-0 text-center sm:text-left">
                     <nav class="space-y-3">
                         <h3 class="font-semibold text-slate-800">Продукти</h3>
                         <ul class="space-y-2 text-sm text-slate-600 flex flex-col flex-wrap h-32 w-80">
@@ -576,9 +582,9 @@
                     </nav>
                 </div>
 
-                <!-- 4) КОНТАКТИ -->
-                <address class="not-italic space-y-3">
-                    <h3 class="font-semibold text-slate-800">Контакти</h3>
+                <!-- Контакти -->
+                <address class="not-italic space-y-3 mx-auto sm:mx-0">
+                    <h3 class="font-semibold text-slate-800 text-center sm:text-left">Контакти</h3>
                     <ul class="space-y-2 text-sm text-slate-500">
                         <li>
                             <img src="../img/footer/ph_map-pin.svg" alt="" class="w-5 pb-3 hover:text-slate-600">
@@ -599,7 +605,7 @@
             <div class="mt-10 border-t border-slate-200 pt-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
                 <p>© 2023 Great.co. All Rights Reserved.</p>
                 <p>Made with love and code by
-                    <a class=" hover:text-slate-700" href="#"><b>Fundamental Studio</b></a>
+                    <a class="hover:text-slate-700" href="#"><b>Fundamental Studio</b></a>
                 </p>
             </div>
         </div>
