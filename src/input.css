@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.font-inter-extra-light {
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+}
+
+.font-nexa {
+    font-family: 'Nexa', sans-serif;
+}
+
+.font-nexa-bold {
+    font-family: 'Nexa', sans-serif;
+    font-weight: bold;
+}
+
 .magnifying-icon {
     max-height: 20px;
 }
@@ -10,7 +33,7 @@ section {
 }
 
 section#product {
-    @apply max-w-screen-xl flex flex-col md:flex-row md:items-start gap-8 xl:gap-14;
+    @apply flex flex-col md:flex-row md:items-start gap-8 xl:gap-14;
 }
 
 .color-radio-button {
@@ -78,7 +101,7 @@ section#review {
 }
 
 section#gifting {
-    @apply h-auto md:h-150 bg-[#a6d5ff];
+    @apply h-auto md:h-150 bg-[#bfe0fd];
 }
 
 .floating-image {
